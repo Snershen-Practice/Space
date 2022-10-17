@@ -1,0 +1,75 @@
+---
+title: Space
+layout: ./app/layout.ejs
+engine: ejs
+current:
+---
+
+<main class="bg bg-destination" data-page="destination">
+  <section
+    class="destination-intro container d-flex align-items-center align-items-md-start h-100 w-100"
+  >
+    <div>
+      <h2 class="font-condensed subpage-title mb-64">
+        <span>01</span>Pick your destination
+      </h2>
+      <div
+        class="d-flex justify-content-between flex-md-column align-items-md-center ms-auto"
+      >
+        <figure>
+          <div
+            data-img="destination-img-1"
+            class="destination-img"
+            id="img"
+          ></div>
+        </figure>
+        <div class="destination-content">
+          <div class="tab">
+            <ul
+              class="tab-wrapper font-condensed d-flex justify-content-md-center"
+            >
+              <li>
+                <a href="#" class="tab-item active">MOON</a>
+              </li>
+              <li>
+                <a href="#" class="tab-item">MARS</a>
+              </li>
+              <li>
+                <a href="#" class="tab-item">EUROPA</a>
+              </li>
+              <li>
+                <a href="#" class="tab-item">TITAN</a>
+              </li>
+            </ul>
+          </div>
+          <article class="text-md-center border-bottom">
+            <h1
+              class="destination-title fs-2 mb-16 uppercase text-white"
+              id="title"
+            >
+              MOON
+            </h1>
+            <p id="paragraph">
+              See our planet as you’ve never seen it before. A perfect relaxing
+              trip away to help regain perspective and come back refreshed.
+              While you’re there, take in some history by visiting the Luna 2
+              and Apollo 11 landing sites.
+            </p>
+          </article>
+          <div
+            class="d-flex uppercase pt-28 justify-content-md-center flex-xs-column"
+          >
+            <div class="distance text-md-center">
+              <h3 class="fs-7 font-condensed mb-12">AVG. DISTANCE</h3>
+              <h4 class="fs-4 text-white" id="distance">384,400 km</h4>
+            </div>
+            <div class="time text-md-center">
+              <h3 class="fs-7 font-condensed mb-12">Est. travel time</h3>
+              <h4 class="fs-4 text-white" id="time">3 days</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

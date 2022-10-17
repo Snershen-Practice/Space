@@ -1,0 +1,139 @@
+.crew-img {
+  //   position: absolute;
+  //   bottom: 0;
+  @include size(550px, 700px);
+  position: relative;
+  @media (max-width: 992px) {
+    @include size(450px);
+  }
+  @include pad {
+    @include size(539px, 532px);
+    margin-top: 40px;
+  }
+  @media (max-width: 576px) {
+    width: 380px;
+    height: 400px;
+  }
+  @media (max-width: 414px) {
+    width: 323px;
+    height: 223px;
+  }
+}
+
+.crew-content {
+  margin-bottom: 120px;
+  @media (max-width: 992px) {
+    margin-bottom: 40px;
+  }
+  @include pad {
+    margin-bottom: 40px;
+  }
+  @media (max-width: 576px) {
+    order: 2;
+  }
+  h1 {
+    white-space: nowrap;
+    @include pad {
+      font-size: 2.5rem;
+    }
+    @media (max-width: 576px) {
+      font-size: 1.5rem;
+    }
+  }
+  h3 {
+    font-size: 2rem;
+    opacity: 0.5;
+    @include pad {
+      font-size: 1.5rem;
+    }
+    @media (max-width: 576px) {
+      font-size: 1rem;
+    }
+  }
+  p {
+    padding-right: 20%;
+    @include pad {
+      padding-left: 18%;
+      padding-right: 18%;
+      font-size: 1rem;
+    }
+    @media (max-width: 576px) {
+      padding: 0;
+    }
+  }
+}
+
+.dotted-slider {
+  display: flex;
+  @include pad {
+    justify-content: center;
+  }
+  @media (max-width: 576px) {
+    order: 1;
+  }
+  a {
+    border-radius: 50%;
+    @include size(15px);
+    background: #fff;
+    opacity: 17.444%;
+    transition: opacity 0.5s;
+    @include pad {
+      @include size(10px);
+      margin-right: 8px;
+      margin-left: 8px;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+    &.active {
+      opacity: 1;
+    }
+  }
+  li:not(:last-child) {
+    margin-right: 24px;
+    @include pad {
+      margin-right: 0px;
+    }
+  }
+}
+
+div[data-img="crew-img-1"] {
+  background: bottom right/contain
+    url("../images/crew/image-douglas-hurley.png") no-repeat;
+  @include pad {
+    background: bottom center/contain
+      url("../images/crew/image-douglas-hurley.png") no-repeat;
+  }
+}
+
+div[data-img="crew-img-2"] {
+  background: bottom right/contain
+    url("../images/crew/image-mark-shuttleworth.png") no-repeat;
+  @include pad {
+    background: bottom center/contain
+      url("../images/crew/image-mark-shuttleworth.png") no-repeat;
+  }
+}
+
+div[data-img="crew-img-3"] {
+  background: bottom right/contain url("../images/crew/image-victor-glover.png")
+    no-repeat;
+  @include pad {
+    background: bottom center/contain
+      url("../images/crew/image-victor-glover.png") no-repeat;
+  }
+}
+div[data-img="crew-img-4"] {
+  background: bottom right/contain
+    url("../images/crew/image-anousheh-ansari.png") no-repeat;
+  @include pad {
+    background: bottom center/contain
+      url("../images/crew/image-anousheh-ansari.png") no-repeat;
+  }
+}
+
+.crew-img-wrapper {
+  @media (max-width: 576px) {
+    order: -1;
+  }
+}

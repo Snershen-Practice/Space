@@ -1,0 +1,47 @@
+---
+title: Space
+layout: ./app/layout.ejs
+engine: ejs
+current:
+---
+
+<main class="bg bg-crew" data-page="crew">
+  <section
+    class="crew-intro container d-flex align-items-end h-100 flex-md-column align-items-md-center"
+  >
+    <div>
+      <h2 class="font-condensed subpage-title mb-md-60 mb-sm-32">
+        <span>02</span>Meet your crew
+      </h2>
+      <div class="d-flex align-items-center flex-lg-column">
+        <div class="d-sm-flex flex-sm-column">
+          <article class="crew-content text-md-center">
+            <h3
+              class="mb-12 mb-md-8 font-bellefair text-primary uppercase text-white"
+              id="role"
+            >
+              Commander
+            </h3>
+            <h1 class="fs-2 mb-16 uppercase text-white" id="title">
+              Douglas Hurley
+            </h1>
+            <p id="paragraph">
+              Douglas Gerald Hurley is an American engineer, former Marine Corps
+              pilot and former NASA astronaut. He launched into space for the
+              third time as commander of Crew Dragon Demo-2.
+            </p>
+          </article>
+          <ul class="dotted-slider mb-sm-32">
+            <li><a href="#" data-num="1" class="dotted-item active"></a></li>
+            <li><a href="#" data-num="2" class="dotted-item"></a></li>
+            <li><a href="#" data-num="3" class="dotted-item"></a></li>
+            <li><a href="#" data-num="4" class="dotted-item"></a></li>
+          </ul>
+        </div>
+        <figure class="crew-img-wrapper border-sm-bottom mb-sm-32">
+          <div data-img="crew-img-1" class="crew-img" id="img"></div>
+        </figure>
+      </div>
+    </div>
+  </section>
+</main>

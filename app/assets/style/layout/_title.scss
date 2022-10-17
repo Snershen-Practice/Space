@@ -1,0 +1,27 @@
+.subpage-title {
+  letter-spacing: 4.72px;
+  margin-bottom: 26px;
+  font-size: 28px;
+  span {
+    margin-right: 24px;
+    opacity: 0.25;
+  }
+  @include pad {
+    padding-top: 130px;
+    font-size: 1.25rem;
+    margin-bottom: 426px;
+    position: relative;
+    // left: -80px;
+  }
+  @media (max-width: 767px) {
+    // padding-top: 88px;
+    left: 0;
+  }
+  @media (max-width: 576px) {
+    padding-top: 88px;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 246px;
+    position: static;
+  }
+}
