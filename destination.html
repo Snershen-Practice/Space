@@ -1,10 +1,67 @@
----
-title: Space
-layout: ./app/layout.ejs
-engine: ejs
-current:
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      property="og:title"
+      content="YOU WANT TO TRAVEL TO
+    SPACE"
+    />
+    <link rel="icon" href="./assets/images/favicon.ico" />
+    <meta
+      property="og:description"
+      content="Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it."
+    />
 
+    <title>Space</title>
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body>
+    <section>
+      <header class="bg-linear">
+        <div
+          class="container d-flex w-100 align-items-center justify-content-between"
+        >
+          <a href="index.html"
+            ><img src="./assets/images/shared/logo.svg" alt="LOGO" class="logo"
+          /></a>
+          <nav>
+            <ul class="nav-wrapper font-condensed">
+              <li>
+                <a href="index.html" class="nav-item" data-pageName="Home"
+                  ><span>00</span>Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="destination.html"
+                  class="nav-item"
+                  data-pageName="Destination"
+                  ><span>01</span>Destination</a
+                >
+              </li>
+              <li>
+                <a href="crew.html" class="nav-item" data-pageName="Crew"
+                  ><span>02</span>Crew</a
+                >
+              </li>
+              <li>
+                <a
+                  href="technology.html"
+                  class="nav-item"
+                  data-pageName="Technology"
+                  ><span>03</span>Technology</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="ham-menu"></a>
+        </div>
+      </header>
+      
 <main class="bg bg-destination" data-page="destination">
   <section
     class="destination-intro container d-flex align-items-center align-items-md-start h-100 w-100"
@@ -73,3 +130,8 @@ current:
     </div>
   </section>
 </main>
+
+    </section>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
